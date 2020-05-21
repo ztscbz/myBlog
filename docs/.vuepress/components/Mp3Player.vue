@@ -5,8 +5,8 @@
       v-model="isPlay"
       @change="play">
     </el-switch>
-    <audio ref="music" loop> 
-      <source src="../public/mp3/yishengyouni.mp3" type="audio/mpeg">
+    <audio ref="music" loop autoplay>
+      <source src="../public/mp3/song.mp3" type="audio/mpeg">
     </audio>
   </div>
 </template>
@@ -15,19 +15,20 @@
   export default{
     data(){
       return {
-        dialogTableVisible:false,
+        // dialogTableVisible:false,  preload="auto"
         isPlay:false,
       }
     },
     methods:{
       play(){
-        if(this.$refs.music.paused){
+        if(this.$refs.music.paused){// 判断是否正在播放 返回布尔值
           this.$refs.music.play()
         }else{
           this.$refs.music.pause()
         }
         this.isPlay=!this.$refs.music.paused
+          console.log(this.$refs.music.paused)
       }
-    }  
+    }
   }
 </script>

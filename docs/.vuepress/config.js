@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Zhu Zhaohua',
+    title: 'ZT',
 
     serviceWorker: true,
     head: [
@@ -7,7 +7,7 @@ module.exports = {
     ],
     markdown: {
       // 显示代码行号
-      lineNumbers: false
+      lineNumbers: true
     },
     themeConfig: {
         logo:"/img/logo.jpeg",
@@ -21,12 +21,11 @@ module.exports = {
           { text: '留言板', link:'/massage/'},
           { text: '链接',
             items: [
-                {text:'简书',link: 'https://www.jianshu.com/u/cbc58f855e75' },
-                {text:'GitHub',link: 'https://github.com/zhuzhaohua' },
-                {text:'码云',link: 'https://gitee.com/kobuta' },
+                {text:'学习',link: 'https://www.bilibili.com' },
+                {text:'GitHub',link: 'https://github.com/ztscbz/myBlog' },
             ]
           }
         ],
-        lastUpdated: 'Last Updated', 
+        lastUpdated: 'Last Updated',
       }
   }
