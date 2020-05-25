@@ -5,7 +5,7 @@
       v-model="isPlay"
       @change="play">
     </el-switch>
-    <audio ref="music" loop autoplay>
+    <audio ref="music" loop preload="auto">
       <source src="../public/mp3/song.mp3" type="audio/mpeg">
     </audio>
   </div>
@@ -15,7 +15,6 @@
   export default{
     data(){
       return {
-        // dialogTableVisible:false,  preload="auto"
         isPlay:false,
       }
     },
